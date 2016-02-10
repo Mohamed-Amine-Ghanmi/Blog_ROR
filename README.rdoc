@@ -1,8 +1,8 @@
-Install ROR
-open GIT console 
-cd to this project file
--bundle install 
--rails s
+Install ROR                                                                                                                             
+open GIT console                                                                                                                        
+cd to this project file                                                                                                                 
+-bundle install                                                                                                                         
+-rails s                                                                                                                                  
 
 
 Some problems that you may encounter:
