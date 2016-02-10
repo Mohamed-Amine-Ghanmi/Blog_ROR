@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+
+  </head>
+  <body>
+    <div class="login_container">
+
+        <%= form_tag admin_sessions_path, :class => "form-signin" do %>
+          <h1 class="text-center">Sign in</h1><p>
+             <label class="sr-only">Email Address</label>
+             <%= text_field_tag :username,"",class: "form-control",:required=>true,:autofocus=>true,:placeholder=>"Email Address"%>
+           </p>
+           <p>
+             <label class="sr-only">Password</label>
+             <%= password_field_tag :password,"",class: "form-control",:required=>true,:placeholder=>"Password" %>
+           </p>
+
+           <p class="checkbox"><label><input type="checkbox">Remember me</label></p>
+            <p><%= submit_tag 'Sign in',class: "btn btn-primary btn-block" %></p>
+
+        <% end %>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,11 @@
+.container1{
+	max-width: 400px;
+	border:1px red solid;
+}
+.form-signin{
+	vertical-align: middle;
+}
+
+.box{
+	border: 1px red dotted;
+}
