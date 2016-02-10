@@ -1,28 +1,23 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Install ROR
+open GIT console 
+cd to this project file
+-bundle install 
+-rails s
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Some problems that you may encounter:
+----------------------------------------------------------------------------------------------------------------
+How to fix error and get back to https with ssl
+The reason is old rubygems. So we need to remove ssl source to be able to update gem --system which includes rubygems and 
+so on. after this we can feel free to get back to ssl source.
+
+gem sources -r https://rubygems.org/ - to temporarily remove secure connection
+gem sources -a http://rubygems.org/ - add insecure connection
+gem update --system // now were able to update rubygems without SSL
+gem sources -r http://rubygems.org/ - to remove insecure connection
+gem sources -a https://rubygems.org/ - add secure connection
+----------------------------------------------------------------------------------------------------------------
+to install when theres a make error :
+cd C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/
+gem spec cache/byebug-8.2.1.gem --ruby > specifications/byebug-8.2.1.gemspec
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/debug_inspector-0.0.2/ext/debug_inspector
